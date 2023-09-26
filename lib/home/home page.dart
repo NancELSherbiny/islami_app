@@ -13,16 +13,21 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    int selectedIndex = 0;
+    int selectedIndex = 1;
     return Stack(
       children: [
-        Image.asset('assets/images/default_bg.png',
-        width: double.infinity,height: double.infinity,
-          fit: BoxFit.fill,),
+        Image.asset(
+          'assets/images/default_bg.png',
+          width: double.infinity,
+          height: double.infinity,
+          fit: BoxFit.fill,
+        ),
         Scaffold(
           appBar: AppBar(
-            title: Text('Islami',
-            style: Theme.of(context).textTheme.titleLarge,),
+            title: Text(
+              'Islami',
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
           ),
           bottomNavigationBar: Theme(
             data: Theme.of(context).copyWith(

@@ -63,7 +63,8 @@ flutter:
   assets:
     - assets/images/
     - assets/light_mode/
-  - assets/files/
+    - assets/files/ahadeth/
+    - assets/files/sura/
     - assets/dark_mode/
   #   - images/a_dot_ham.jpeg
 

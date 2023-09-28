@@ -17,21 +17,18 @@ class MyTheme {
           centerTitle: true,
           iconTheme: IconThemeData(
             color: blackColor,
-      )
-    ),
-    bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      selectedItemColor: blackColor,
-      unselectedItemColor: whiteColor,
-      showUnselectedLabels: true,
-
-
-    ),
-    textTheme: TextTheme(
+          )),
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        selectedItemColor: blackColor,
+        unselectedItemColor: whiteColor,
+        showUnselectedLabels: true,
+      ),
+      textTheme: TextTheme(
         titleLarge: TextStyle(
-      fontSize: 30,
-      fontWeight: FontWeight.bold,
+          fontSize: 30,
+          fontWeight: FontWeight.bold,
         ),
-            titleMedium: TextStyle(fontWeight: FontWeight.w400, fontSize: 25),
+        titleMedium: TextStyle(fontWeight: FontWeight.w400, fontSize: 25),
         titleSmall: TextStyle(fontWeight: FontWeight.bold, fontSize: 23),
       ));
 

@@ -42,26 +42,26 @@ class _HadethTabState extends State<HadethTab> {
         ),
         ahadethList.isEmpty
             ? Center(
-          child: CircularProgressIndicator(
-            color: Theme.of(context).primaryColor,
-          ),
-        )
+                child: CircularProgressIndicator(
+                  color: Theme.of(context).primaryColor,
+                ),
+              )
             : Expanded(
-          child: ListView.separated(
-            separatorBuilder: (context, index) {
-              return Divider(
+                child: ListView.separated(
+                  separatorBuilder: (context, index) {
+                    return Divider(
                       color: provider.isDarkMode()
                           ? MyTheme.yellowColor
                           : Theme.of(context).primaryColor,
                       thickness: 3,
                     );
-            },
-            itemBuilder: (context, index) {
-              return ItemHadethName(hadeth: ahadethList[index]);
-            },
-            itemCount: ahadethList.length,
-          ),
-        ),
+                  },
+                  itemBuilder: (context, index) {
+                    return ItemHadethName(hadeth: ahadethList[index]);
+                  },
+                  itemCount: ahadethList.length,
+                ),
+              ),
       ],
     );
   }

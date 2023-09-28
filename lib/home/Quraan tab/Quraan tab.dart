@@ -5,7 +5,6 @@ import 'package:islami/theme.dart';
 import 'package:provider/provider.dart';
 
 import '../../provider/app_config_provider.dart';
-
 class QuraanTab extends StatelessWidget {
   List<String> names = [
     "الفاتحه",
@@ -148,7 +147,7 @@ class QuraanTab extends StatelessWidget {
         ),
         Expanded(
           child: ListView.separated(
-            separatorBuilder: (context,index){
+            separatorBuilder: (context, index) {
               return Divider(
                 color: provider.isDarkMode()
                     ? MyTheme.yellowColor
@@ -156,8 +155,11 @@ class QuraanTab extends StatelessWidget {
                 thickness: 3,
               );
             },
-            itemBuilder: (context,index){
-              return ItemSuraName(name: names[index], index: index,);
+            itemBuilder: (context, index) {
+              return ItemSuraName(
+                name: names[index],
+                index: index,
+              );
             },
             itemCount: names.length,
           ),

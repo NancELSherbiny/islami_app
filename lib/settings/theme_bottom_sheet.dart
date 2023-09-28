@@ -3,7 +3,6 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami/provider/app_config_provider.dart';
 import 'package:islami/theme.dart';
 import 'package:provider/provider.dart';
-
 class ThemeBottomSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

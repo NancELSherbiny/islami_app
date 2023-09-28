@@ -46,26 +46,27 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
         body: verses.length == 0
             ? Center(child: CircularProgressIndicator())
             : Container(
-          margin: EdgeInsets.symmetric(
-            vertical: MediaQuery.of(context).size.height*0.06,
-            horizontal: MediaQuery.of(context).size.width*0.02,
-          ),
-          decoration: BoxDecoration(
+                margin: EdgeInsets.symmetric(
+                  vertical: MediaQuery.of(context).size.height * 0.06,
+                  horizontal: MediaQuery.of(context).size.width * 0.02,
+                ),
+                decoration: BoxDecoration(
                   color: provider.isDarkMode()
                       ? Theme.of(context).primaryColor
                       : MyTheme.whiteColor,
                   borderRadius: BorderRadius.circular(24),
                 ),
-          padding: EdgeInsets.all(8),
-          child: ListView.builder(
-            itemBuilder: (context, index) {
-              return ItemSuraDetails(content:
-              verses[index], index: index,
-              );
-            },
-            itemCount: verses.length,
-          ),
-        ),
+                padding: EdgeInsets.all(8),
+                child: ListView.builder(
+                  itemBuilder: (context, index) {
+                    return ItemSuraDetails(
+                      content: verses[index],
+                      index: index,
+                    );
+                  },
+                  itemCount: verses.length,
+                ),
+              ),
       ),
     ]);
   }
